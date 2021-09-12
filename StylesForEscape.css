@@ -1,0 +1,35 @@
+.background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.50;
+    background-size: auto;
+    width: 960px;
+    height: 1500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+header{
+    font-size: 60px;
+    margin-left: 25px;
+}
+
+table{
+    table-layout: auto;
+    width: 960px;
+}
+
+td{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}
+
+footer{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 450px;
+}
