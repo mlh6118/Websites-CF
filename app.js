@@ -22,13 +22,16 @@ function numberPlaying(){
     // Validate value entered.
     if(numberPlayers < 1 || numberPlayers > 6){
         alert("Please enter a number between 1 and 6.");
-        numberPlaying();
+        // console.log(numberPlayers);
+        // numberPlaying();
     }
     numberOfPlayers = numberPlayers; // assign value to global variable.
+    // console.log('numberPlayers: ' + numberPlayers);
+    // console.log('numberOfPlayers: ' + numberOfPlayers);
 }
 
 function roomRecommendations(){
-    console.log(numberOfPlayers);
+    // console.log(numberOfPlayers);
     if(numberOfPlayers <= 2){
         alert('We suggest looking at rooms for Solos and Pairs.');
     }
