@@ -1,7 +1,5 @@
 'use strict'
 
-//let numberOfPlayers = 0;
-
 let numberPlayers = 0;
 
 function todaysDate(){
@@ -19,25 +17,15 @@ function userName(){
 
 function numberPlaying(){
     // Ask how many players are in the group.  For 1-2, suggest Solos and Pairs.  For 3 or more, ask user if anyone is under 17.  If under 17, suggest Family Friendly, otherwise, suggest Mature Audience.
-    let numberPlayers = prompt('How many people are in your group (1-6): ');
+    numberPlayers = prompt('How many people are in your group (1-6): ');
     
     // Validate value entered.
-    while(numberPlayers < 1 || numberPlayers > 6)
-        let numberPlayers = prompt('How many people are in your group (1-6): ');
-
-    //    if(numberPlayers < 1 || numberPlayers > 6){
-//        alert("Please enter a number between 1 and 6.");
-        // console.log(numberPlayers);
-        // numberPlaying();
-//    }
-//    numberOfPlayers = numberPlayers; // assign value to global variable.
-    // console.log('numberPlayers: ' + numberPlayers);
-    // console.log('numberOfPlayers: ' + numberOfPlayers);
-}
+    while(numberPlayers < 1 || numberPlayers > 6){
+        numberPlayers = prompt('How many people are in your group (1-6): ');
+    }
+ }
 
 function roomRecommendations(){
-    // console.log(numberOfPlayers);
-//    if(numberOfPlayers <= 2){
     if(numberPlayers <= 2){
         alert('We suggest looking at rooms for Solos and Pairs.');
     }
