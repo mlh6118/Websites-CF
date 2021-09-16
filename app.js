@@ -39,3 +39,20 @@ function roomRecommendations(){
         }
     }
 }
+
+let pageReview = 'n';
+let reviewCategory = 0;
+
+function reviewPage(){
+    pageReview = prompt('Would you like to review the room categories? (y/n)');
+
+    console.log(pageReview);
+
+    if(pageReview.toLowerCase() === 'y'){
+        reviewCategory = prompt('Please review our page.  How many stars would you give it (0-5)?');
+  
+        for(let i = 0; i < reviewCategory; i++){
+            document.write('<img alt="star" src="./star.png" width="25px" height="25px">');
+        }
+    }
+}
